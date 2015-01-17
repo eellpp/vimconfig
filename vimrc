@@ -1,12 +1,31 @@
-execute pathogen#infect()
 set nocompatible
 set noswapfile
 syntax enable
 filetype plugin on
 filetype indent on
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+"***** VUNDLE Block ***********
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+"Plugins from github repos
+Plugin 'scrooloose/nerdtree'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'tpope/vim-sensible'
+"Plugins from vimscripts
+Plugin 'DirDiff.vim'
+call vundle#end()    " required
+
+"***** VUNDLE Block End ***********
+
 map gt :tabn<CR>
 map gT :tabp<CR>
 map gn :tabnew<CR>
+
+"***** Easy Motion Block ***********
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
 " Bi-directional find motion
@@ -28,3 +47,4 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 " for mapping the search
  map  / <Plug>(easymotion-sn)
  omap / <Plug>(easymotion-tn)
+ "***** Easy Motion END ***********
