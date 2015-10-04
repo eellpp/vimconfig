@@ -83,3 +83,8 @@ let g:multi_cursor_exit_from_insert_mode = 0
 map <leader>n :NERDTree<CR>
 map <leader>nc :NERDTreeClose<CR>
 
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
