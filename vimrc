@@ -5,8 +5,7 @@
 set nocompatible
 set noswapfile
 syntax enable
-filetype plugin on
-filetype indent on
+filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -19,12 +18,22 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-sensible'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'vim-indent-object'
+Plugin 'vim-expand-region'
+Plugin 'YouCompleteMe'
+Plugin 'junegunn/goyo.vim'
+Plugin 'scrooloose/syntastic'
+
+
 "Plugins from vimscripts
 Plugin 'DirDiff.vim'
 call vundle#end()    " required
 
 "***** VUNDLE Block End ***********
-
 map gt :tabn<CR>
 map gT :tabp<CR>
 map gn :tabnew<CR>
@@ -52,3 +61,25 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
  map  / <Plug>(easymotion-sn)
  omap / <Plug>(easymotion-tn)
  "***** Easy Motion END ***********
+
+colorscheme desert
+let g:DirDiffExcludes = "*.pyc,.*.swp,*.egg,*.swo"
+let g:DirDiffWindowSize = 7
+
+"let g:airline#extensions#tabline#enabled = 1
+
+"NERDTree specific conf
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+source ~/.vimrc_auth
+
+set number
+
+let mapleader = "\<Space>"
+let g:multi_cursor_exit_from_insert_mode = 0
+
+map <leader>n :NERDTree<CR>
+map <leader>nc :NERDTreeClose<CR>
+
