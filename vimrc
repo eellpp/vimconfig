@@ -24,10 +24,14 @@ Plugin 'jlanzarotta/bufexplorer'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-indent-object'
 Plugin 'vim-expand-region'
-Plugin 'YouCompleteMe'
+"Plugin 'YouCompleteMe'
 Plugin 'junegunn/goyo.vim'
 Plugin 'scrooloose/syntastic'
-
+"Plugins for snipmate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'mrtazz/simplenote.vim'
 
 "Plugins from vimscripts
 Plugin 'DirDiff.vim'
@@ -82,6 +86,10 @@ let g:multi_cursor_exit_from_insert_mode = 0
 
 map <leader>n :NERDTree<CR>
 map <leader>nc :NERDTreeClose<CR>
+
+" page down and up
+map <leader>f <C-f>
+map <leader>b <C-b>
 
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
