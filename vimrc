@@ -77,7 +77,8 @@ let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
-source ~/.vimrc_auth
+" Add any auth variables to this file
+"source ~/.vimrc_auth
 
 set number
 
