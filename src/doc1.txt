@@ -1,5 +1,5 @@
 
 This is master version 1 edit for doc1.txt
 This is featureB
-This is featureB extra line from branch B
-This is feature B extra line 2
+This is feature C
+THis is extra line from feature C
