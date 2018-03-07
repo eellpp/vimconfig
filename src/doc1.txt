@@ -1,2 +1,3 @@
 
 This is master version 1 edit for doc1.txt
+Master 1 extra line
